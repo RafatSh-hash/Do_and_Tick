@@ -30,16 +30,23 @@
             <button class="px-3 py-2 rounded-lg bg-green-300" id="taskSubmit" type="submit">Add Task!</button>
         </form>
     </div>
-    <div class="w-2/5 mx-auto mt-10 flex justify-center items-center">
-        <div id="todo" class="w-full md:w-[50%] lg:w-[50%] flex flex-col items-start">
-            <div class="py-2">
-                <h1 class="text-center text-lg">Your Unfinished Task</h1>
+    <div class="w-2/5 mx-auto mt-10 flex justify-center items-start ">
+        <div class="w-full md:w-[50%] lg:w-[50%] flex flex-col justify-start items-center bg-red-100">
+            <div class="py-2 text-center">
+                <h1 class="text-center text-lg" id="taskHeader">Your unfinished Task of <span id="currentDate"></span>
+                </h1>
+            </div>
+            <div id="todo" class="flex flex-col items-start">
+
             </div>
 
         </div>
-        <div id="complete" class="w-full md:w-[50%] lg:w-[50%] flex flex-col items-start">
+        <div class="w-full md:w-[50%] lg:w-[50%] flex flex-col items-center bg-green-100">
             <div class="py-2">
                 <h1 class="text-center text-lg">Your Completed Task</h1>
+            </div>
+            <div id="complete">
+
             </div>
 
         </div>
