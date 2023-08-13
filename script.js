@@ -124,9 +124,7 @@ function createTaskElement(task) {
 
             if (toDo.innerHTML.trim() === '') {
                 window.alert('Congratulations! You have successfully completed all tasks.');
-                const noTask = document.createElement('div');
-                noTask.innerHTML = `<h1 class="text-3xl">You have no task left</h1>`;
-                toDo.appendChild(noTask);
+                
             }
         } 
     });
