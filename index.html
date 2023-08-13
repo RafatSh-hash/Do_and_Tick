@@ -4,15 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
     <!-- Adding Tailwind PlayCDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Adding Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
     <title>Do_&_Tick</title>
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <p>021</p>
-    <p class="text-red-500">Hola</p>
+    <!-- headingSection -->
+    <div class="w-9/12 mx-auto">
+
+        <h1 class="text-center font-semibold text-4xl">Effortlessly Organize Your Day with Do_&_Tick </h1>
+    </div>
+    <div class="w-2/5 mx-auto mt-20">
+        <form id="form" onsubmit="handleSubmit(event)">
+            <input class="border border-2  rounded-lg py-2 px-3" placeholder="Your task" type="text" name="task"
+                id="task">
+            <button class="px-3 py-2 rounded-lg bg-green-300" id="taskSubmit" type="submit">Add Task!</button>
+        </form>
+    </div>
+    <div class="w-2/5 mx-auto mt-10 flex justify-center items-center">
+        <div id="todo" class="w-full md:w-[50%] lg:w-[50%] flex flex-col items-start">
+            <div class="py-2">
+                <h1 class="text-center text-lg">Your Unfinished Task</h1>
+            </div>
+
+        </div>
+        <div id="complete" class="w-full md:w-[50%] lg:w-[50%] flex flex-col items-start">
+            <div class="py-2">
+                <h1 class="text-center text-lg">Your Completed Task</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
