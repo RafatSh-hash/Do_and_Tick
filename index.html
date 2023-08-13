@@ -25,15 +25,18 @@
     </div>
     <div class="w-2/5 mx-auto mt-20">
         <form id="form" onsubmit="handleSubmit(event)">
-            <input class="border border-2  rounded-lg py-2 px-3" placeholder="Your task" type="text" name="task"
-                id="task">
-            <button class="px-3 py-2 rounded-lg bg-green-300" id="taskSubmit" type="submit">Add Task!</button>
+            <input class="border border-2  rounded-tl-lg rounded-bl-lg py-2 px-3" placeholder="Your task" type="text"
+                name="task" id="task">
+            <button class="px-3 py-2 border-2 border-green-300 -mx-1 rounded-tr-lg rounded-br-lg bg-green-300"
+                id="taskSubmit" type="submit">Add
+                Task!</button>
         </form>
     </div>
     <div class="w-2/5 mx-auto mt-10 flex justify-center items-start ">
         <div class="w-full md:w-[50%] lg:w-[50%] flex flex-col justify-start items-center bg-red-100">
             <div class="py-2 text-center">
-                <h1 class="text-center text-lg" id="taskHeader">Your unfinished Task of <span id="currentDate"></span>
+                <h1 class="text-center text-lg my-2" id="taskHeader">Your unfinished Task of <span
+                        id="currentDate"></span>
                 </h1>
             </div>
             <div id="todo" class="flex flex-col items-start">
@@ -43,7 +46,7 @@
         </div>
         <div class="w-full md:w-[50%] lg:w-[50%] flex flex-col items-center bg-green-100">
             <div class="py-2">
-                <h1 class="text-center text-lg">Your Completed Task</h1>
+                <h1 class="text-center text-lg my-2">Your Completed Task</h1>
             </div>
             <div id="complete">
 
