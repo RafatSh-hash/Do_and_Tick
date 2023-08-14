@@ -130,6 +130,7 @@ function createTaskElement(task) {
     });
 }
 
+
 function handleSubmit(event) {
     event.preventDefault();
     const task = document.getElementById("task").value;
